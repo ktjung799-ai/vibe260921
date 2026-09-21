@@ -1,0 +1,10 @@
+# 빌드 산출물
+build/
+dist/
+*.spec
+__pycache__/
+
+# 크롤러 실행 결과(테스트 출력)
+news_result.*
+kospi200_top.csv
+kospi200_top.xlsx
