@@ -2,9 +2,30 @@
 build/
 dist/
 *.spec
+
+# Python
 __pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+.env
+
+.pytest_cache/
 
 # 크롤러 실행 결과(테스트 출력)
 news_result.*
 kospi200_top.csv
 kospi200_top.xlsx
+kospi200_market.csv
+kospi200_market.xlsx
+kospi200_page_*.csv
+
+# 엑셀이 열려 있을 때 생기는 임시 파일
+~$*
+
+# 에디터/OS
+.idea/
+.DS_Store
+Thumbs.db
