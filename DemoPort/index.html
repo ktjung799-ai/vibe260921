@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정경태 | 개발자 프로필</title>
+<meta name="description" content="바이브코딩, Python, HTML5 개발자 정경태의 프로필과 작업물">
+<meta property="og:type" content="website">
+<meta property="og:title" content="정경태 | 개발자 프로필">
+<meta property="og:description" content="바이브코딩으로 아이디어를 빠르게 동작하는 결과물로 만드는 개발자">
+<meta name="theme-color" content="#0f172a">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // 깜빡임 방지: 저장된 테마를 렌더링 전에 적용
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">DemoPort</a>
+    <nav aria-label="주 메뉴">
+      <ul class="menu">
+        <li><a href="#top">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#projects">작업물</a></li>
+        <li><a href="#contact">연락</a></li>
+      </ul>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="라이트/다크 테마 전환">
+      <span aria-hidden="true" id="themeIcon">🌙</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap reveal">
+      <p class="eyebrow">&lt;developer /&gt;</p>
+      <h1>안녕하세요,<br><span class="accent">정경태</span>입니다</h1>
+      <p class="lead">바이브코딩으로 아이디어를 빠르게 동작하는 결과물로 만드는 개발자</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">작업물 보기</a>
+        <a class="btn ghost" href="#contact">연락하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 id="skills-title" class="reveal">기술 스택</h2>
+      <div class="grid skills">
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">✨</div>
+          <h3>바이브코딩</h3>
+          <p>AI와 대화하며 기획부터 구현까지 빠르게 만드는 개발 방식</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🐍</div>
+          <h3>Python</h3>
+          <p>자동화, 데이터 처리, 게임/도구 제작</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🌐</div>
+          <h3>HTML5</h3>
+          <p>HTML5 / CSS3 / JavaScript 기반 웹 페이지 및 Canvas 게임</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <h2 id="projects-title" class="reveal">작업물</h2>
+      <div class="grid projects">
+        <article class="card project reveal">
+          <h3>Snake 게임</h3>
+          <p>방향키로 조작하는 뱀 게임</p>
+          <ul class="tags"><li>Python</li><li>tkinter</li></ul>
+          <a class="link" href="projects/snake.py" target="_blank" rel="noopener">코드 보기 →</a>
+        </article>
+        <article class="card project reveal">
+          <h3>Tetris 게임</h3>
+          <p>줄 삭제 효과가 있는 테트리스 (Canvas)</p>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+          <a class="link" href="projects/tetris.html" target="_blank" rel="noopener">실행하기 →</a>
+        </article>
+        <article class="card project reveal">
+          <h3>개발자 프로필 사이트</h3>
+          <p>지금 보고 계신 이 사이트</p>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+          <a class="link" href="#top">맨 위로 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact reveal">
+      <h2 id="contact-title">연락</h2>
+      <p>협업이나 문의는 이메일로 편하게 연락 주세요.</p>
+      <div class="mail-row">
+        <a class="mail" id="mail" href="mailto:ktjung@kird.re.kr">ktjung@kird.re.kr</a>
+        <button class="btn ghost" id="copyBtn" type="button">복사</button>
+      </div>
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 정경태</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
