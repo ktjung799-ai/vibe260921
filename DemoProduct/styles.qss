@@ -1,0 +1,198 @@
+/* ================= DemoProduct 스타일시트 ================= */
+
+/* ---------- 전역 ---------- */
+QMainWindow {
+    background-color: #f4f6fb;
+}
+
+QWidget {
+    font-family: '맑은 고딕', 'Segoe UI';
+    font-size: 10pt;
+    color: #1f2430;
+}
+
+/* ---------- 상단 배너 ---------- */
+QFrame#headerBanner {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 #4f46e5, stop:1 #6366f1);
+}
+QLabel#headerTitle {
+    color: #ffffff;
+    font-size: 17pt;
+    font-weight: 700;
+    background: transparent;
+}
+QLabel#headerSubtitle {
+    color: #e0e7ff;
+    font-size: 9pt;
+    background: transparent;
+}
+
+/* ---------- 탭 ---------- */
+QTabWidget::pane {
+    border: none;
+    background-color: #f4f6fb;
+    top: -1px;
+}
+QTabBar::tab {
+    background: #e7e9f5;
+    color: #4b4f66;
+    padding: 10px 24px;
+    margin-right: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: 600;
+}
+QTabBar::tab:selected {
+    background: #ffffff;
+    color: #4f46e5;
+    border-bottom: 3px solid #4f46e5;
+}
+QTabBar::tab:hover:!selected {
+    background: #dfe2f5;
+}
+
+/* ---------- 검색 카드 ---------- */
+QFrame#searchCard {
+    background-color: #ffffff;
+    border: 1px solid #e2e5f1;
+    border-radius: 10px;
+}
+QLabel#searchLabel {
+    color: #4b4f66;
+    font-weight: 600;
+    background: transparent;
+}
+
+QComboBox, QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #d7dae6;
+    border-radius: 6px;
+    padding: 6px 10px;
+    selection-background-color: #4f46e5;
+}
+QComboBox:focus, QLineEdit:focus {
+    border: 1px solid #4f46e5;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 22px;
+}
+QComboBox QAbstractItemView {
+    border: 1px solid #d7dae6;
+    background-color: #ffffff;
+    selection-background-color: #4f46e5;
+    selection-color: #ffffff;
+    outline: none;
+}
+
+/* ---------- 테이블 ---------- */
+QTableView {
+    background-color: #ffffff;
+    alternate-background-color: #f7f8fd;
+    gridline-color: #edeff7;
+    border: 1px solid #e2e5f1;
+    border-radius: 10px;
+    selection-background-color: #4f46e5;
+    selection-color: #ffffff;
+}
+QHeaderView::section {
+    background-color: #eef0fb;
+    color: #3c3f56;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #d7dae6;
+    font-weight: 600;
+}
+QTableView::item {
+    padding: 4px;
+}
+QTableView::item:selected {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+QTableCornerButton::section {
+    background-color: #eef0fb;
+    border: none;
+}
+
+/* ---------- 버튼 (공통) ---------- */
+QPushButton {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #6b7280;
+}
+QPushButton:hover {
+    background-color: #565d6b;
+}
+QPushButton:pressed {
+    background-color: #454b57;
+}
+
+QPushButton#addBtn            { background-color: #16a34a; }
+QPushButton#addBtn:hover      { background-color: #128040; }
+QPushButton#deleteBtn         { background-color: #dc2626; }
+QPushButton#deleteBtn:hover   { background-color: #b91c1c; }
+QPushButton#saveBtn           { background-color: #2563eb; }
+QPushButton#saveBtn:hover     { background-color: #1d4ed8; }
+QPushButton#revertBtn         { background-color: #9ca3af; }
+QPushButton#revertBtn:hover   { background-color: #7c828d; }
+QPushButton#refreshBtn        { background-color: #0891b2; }
+QPushButton#refreshBtn:hover  { background-color: #0e7490; }
+QPushButton#searchBtn         { background-color: #4f46e5; }
+QPushButton#searchBtn:hover   { background-color: #4338ca; }
+QPushButton#clearBtn          { background-color: #94a3b8; }
+QPushButton#clearBtn:hover    { background-color: #74869c; }
+
+/* ---------- 배지(건수) ---------- */
+QLabel#countBadge {
+    background-color: #eef0fb;
+    color: #4f46e5;
+    border-radius: 12px;
+    padding: 6px 14px;
+    font-weight: 700;
+}
+
+/* ---------- 상태 바 ---------- */
+QStatusBar {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e5f1;
+    color: #6b7280;
+}
+
+/* ---------- 스크롤바 ---------- */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: #c7cae0;
+    border-radius: 5px;
+    min-height: 24px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #a9adcf;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 10px;
+}
+QScrollBar::handle:horizontal {
+    background: #c7cae0;
+    border-radius: 5px;
+    min-width: 24px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #a9adcf;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0;
+}
